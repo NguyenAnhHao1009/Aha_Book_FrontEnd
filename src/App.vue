@@ -1,19 +1,22 @@
-<script setup>
-
-</script>
-
 <template>
-  <header>
-    Header
+  <header class="">
+    <Navbar></Navbar>
   </header>
-
-  <main>
-  </main>
-  <footer>
-    Footer
+  <div class="">
+    <RouterView></RouterView>
+  </div>
+  <footer >
+    <Footer></Footer>
   </footer>
 </template>
 
-<style scoped>
+<script>
+import Navbar from '@/components/Layout/Navbar.vue'
+import Footer from '@/components/Layout/Footer.vue'
 
-</style>
+export default {
+  components: { Navbar, Footer },
+ 
+}
+</script>
+<style scoped></style>
